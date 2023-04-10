@@ -1,13 +1,13 @@
 package com.shoppingcart.shoppingcart.home;
 
 public enum Product {
-    NOBLE("null.jpg", 0.55f), OVERLORD("null.jpg", 1.00f), ULTRA("null.jpg", 0.70f);
+    CHOCOLATE_CHIP_COOKIE("cookie.png", 1.55f), BANANA_BREAD("Banana+Loaf+Slice.png", 2.25f), BLONDIES("Blondies.png", 1.75f);
 
     private String imageFile;
     private float price;
     private Product(String image, float price){
 
-        this.imageFile = imageFile;
+        this.imageFile = image;
         this.price = price;
     }
     public String getImageFile(){

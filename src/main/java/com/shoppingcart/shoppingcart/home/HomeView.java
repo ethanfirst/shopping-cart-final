@@ -2,6 +2,8 @@ package com.shoppingcart.shoppingcart.home;
 
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.scene.paint.Color;
 
 import java.io.File;
 import java.io.IOException;
@@ -10,8 +12,9 @@ import java.net.URL;
 public class HomeView {
     private Parent view;
     public HomeView() throws IOException {
-        URL url = new File("C:/Users/user/IdeaProjects/shopping-cart/src/main/java/com/shoppingcart/shoppingcart/home/home.fxml").toURI().toURL();
+        URL url = new File("src/main/java/com/shoppingcart/shoppingcart/home/home.fxml").toURI().toURL();
         Parent root = FXMLLoader.load(url);
+
 
         this.view = root;
     }

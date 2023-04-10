@@ -3,10 +3,14 @@ module com.shoppingcart.shoppingcart {
     requires javafx.fxml;
 
     requires org.controlsfx.controls;
-    requires com.dlsc.formsfx;
+   requires com.dlsc.formsfx;
     requires org.kordamp.bootstrapfx.core;
-    requires com.almasb.fxgl.all;
+   requires com.almasb.fxgl.all;
 
     opens com.shoppingcart.shoppingcart to javafx.fxml;
     exports com.shoppingcart.shoppingcart;
+    opens com.shoppingcart.shoppingcart.home to javafx.fxml;
+    exports com.shoppingcart.shoppingcart.home;
+    opens com.shoppingcart.shoppingcart.cart to javafx.fxml;
+    exports com.shoppingcart.shoppingcart.cart;
 }

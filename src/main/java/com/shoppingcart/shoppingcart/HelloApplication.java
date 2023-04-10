@@ -17,7 +17,7 @@ public class HelloApplication extends Application {
     public static Stage window;
     @Override
     public void start(Stage stage) throws IOException {
-        URL url = new File("C:/Users/user/IdeaProjects/shopping-cart/src/main/java/com/shoppingcart/shoppingcart/cart-ui.fxml").toURI().toURL();
+        URL url = new File("src/main/java/com/shoppingcart/shoppingcart/cart-ui.fxml").toURI().toURL();
         Parent root = FXMLLoader.load(url);
         stage.setTitle("Shopping Cart");
         //stage.initStyle(StageStyle.TRANSPARENT);
